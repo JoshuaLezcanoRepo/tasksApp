@@ -135,8 +135,8 @@ REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
 }
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'client/static')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'tasks/static')
+# ]
 
 ALLOWED_HOSTS = ['locahost', 'web-production-54d5.up.railway.app']
