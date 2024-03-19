@@ -20,5 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('tasks/', include('tasks.urls')),
-    path('', include('tasks/tasks.urls')),
+    path('https://web-production-54d5.up.railway.app/', include('tasks/tasks.urls')),
 ]
