@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)!8%-*dw2ci_wm#9+oym(*@%l13%f9grnq6(=69wd+ow*cne1#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['locahost', 'web-production-54d5.up.railway.app']
 
 
 # Application definition
@@ -133,3 +133,7 @@ CORS_ALLOWED_ORIGINS = ["http://localhost:5173"]
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
 }
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'client/static')
+]
